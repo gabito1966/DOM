@@ -1,4 +1,4 @@
-import { displayTasks } from "./readTask.js";
+import { displayTasks } from './readTasks.js';
 
 const deleteIcon = (id) => {
   const i = document.createElement('i');
@@ -14,7 +14,7 @@ const deleteTask = (id) => {
   console.log(index);
   tasks.splice(index, 1);
   li.innerHTML = '';
-  localStorage.setItem("tasks", JSON.stringify(tasks));
+  localStorage.setItem('tasks', JSON.stringify(tasks));
   displayTasks();
 };
 
